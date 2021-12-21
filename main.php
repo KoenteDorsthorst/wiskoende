@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<?php include "Includables/navbar.html" ?>
+
 <script>
     var randomNumber1 = Math.floor(Math.random() * 10);
     var randomNumber2 = Math.floor(Math.random() * 10);
