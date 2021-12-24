@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 <?php include "Includables/navbar.html" ?>
 
 <script>
