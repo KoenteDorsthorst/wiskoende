@@ -9,7 +9,6 @@
 
 
         function calculate(){
-            console.log('bro');
             const userAnswer = document.getElementById("answer").value;
             if (userAnswer == Math.pow(randomNumber1, 2) + Math.pow(randomNumber2, 2)){
                 alert("yeah");
@@ -23,7 +22,8 @@
 
     <script type = "text/javascript">
         function newTest(){
-            console.log('bro???');
+            randomNumber1 = 0;
+            randomNumber2 = 0;
             while(randomNumber1 <= 0){
                 randomNumber1 = Math.floor(Math.random() * 10);
             }
@@ -43,8 +43,8 @@
 
 <script>
 
-    var randomNumber1 = 0;
-    var randomNumber2 = 0;
+    let randomNumber1 = 0;
+    let randomNumber2 = 0;
     window.onload = function() {
         newTest()
     }
