@@ -6,14 +6,31 @@
     <link rel="stylesheet" href="/css.css">
 
     <script type = "text/javascript">
+
+
         function calculate(){
-            var userAnswer = document.getElementById("answer").value;
+            console.log('bro');
+            const userAnswer = document.getElementById("answer").value;
             if (userAnswer == Math.pow(randomNumber1, 2) + Math.pow(randomNumber2, 2)){
                 alert("yeah");
             }
             else{
                 alert("no");
             }
+        }
+
+    </script>
+
+    <script type = "text/javascript">
+        function newTest(){
+            console.log('bro???');
+            while(randomNumber1 <= 0){
+                randomNumber1 = Math.floor(Math.random() * 10);
+            }
+            while(randomNumber2 <= 0){
+                randomNumber2 = Math.floor(Math.random() * 10);
+            }
+            document.getElementById('question').innerHTML = randomNumber1 + "² + " + randomNumber2 + "² = ?";
         }
     </script>
 
@@ -25,16 +42,11 @@
     include($path) ?>
 
 <script>
+
     var randomNumber1 = 0;
     var randomNumber2 = 0;
-    while(randomNumber1 <= 0){
-        randomNumber1 = Math.floor(Math.random() * 10);
-    }
-    while(randomNumber2 <= 0){
-        randomNumber2 = Math.floor(Math.random() * 10);
-    }
     window.onload = function() {
-        document.getElementById('question').innerHTML = randomNumber1 + "² + " + randomNumber2 + "² = ?";
+        newTest()
     }
 
 </script>
@@ -44,7 +56,10 @@
         <label for="answer"><p id="question"></p></label><br>
         <input type="text" id="answer" name="answer"><br>
         <input type="button" value="calculate" onclick="calculate();">
+        <input type="button" value="newTest" onclick="newTest();">
     </form>
+
+
 </div>
 
 
