@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="/css.css">
+
+    <script type = "text/javascript">
+        function calculate(){
+            var userAnswer = document.getElementById("answer").value;
+            if (userAnswer == Math.pow(randomNumber1, 2) + Math.pow(randomNumber2, 2)){
+                alert("yeah");
+            }
+            else{
+                alert("no");
+            }
+        }
+    </script>
 
 </head>
 <body>
@@ -12,12 +24,7 @@
     $path .= "/Includables/navbar.html";
     include($path) ?>
 
-
-
-
 <script>
-
-
     var randomNumber1 = 0;
     var randomNumber2 = 0;
     while(randomNumber1 <= 0){
@@ -30,31 +37,17 @@
         document.getElementById('question').innerHTML = randomNumber1 + "² + " + randomNumber2 + "² = ?";
     }
 
-
-
 </script>
 
 <div class="center">
-    <form onsubmit="calculate()">
+    <form>
         <label for="answer"><p id="question"></p></label><br>
         <input type="text" id="answer" name="answer"><br>
-        <input type="submit" value="submit">
+        <input type="button" value="calculate" onclick="calculate();">
     </form>
 </div>
 
 
-<script>
-    function calculate() {
-        alert("2");
-        var userAnswer = document.getElementById("answer").value;
-        if (userAnswer === Math.pow(randomNumber1, 2) + Math.pow(randomNumber2, 2){
-            alert("yeah");
-        }
-        else{
-            alert("no");
-        }
-    }
-</script>
 
 
 <?php

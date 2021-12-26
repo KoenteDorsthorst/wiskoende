@@ -9,7 +9,7 @@
 
 
     <h3>Opdrachten</h3>
-    <a href=""
+    <a href="/pythagorasTest1.php">test</a>
 </div>
 
 
