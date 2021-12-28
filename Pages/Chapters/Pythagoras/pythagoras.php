@@ -19,7 +19,7 @@ include($path) ?>
 
 
     <h3>Opdrachten</h3>
-    <a href="/Chapters/Pythagoras/pythagorasTest1.php">test</a>
+    <a href="/Pages/Chaptersapters/Pythagoras/pythagorasTest1.php">test</a>
 </div>
 
 

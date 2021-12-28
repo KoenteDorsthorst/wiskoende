@@ -8,7 +8,10 @@
 <body>
 
 
-<?php include "Includables/navbar.html" ?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/Includables/navbar.html";
+include($path) ?>
 
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'];
