@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="/css.css">
 </head>
 <body>
 
 
 <?php include "Includables/navbar.html" ?>
 
-
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/Includables/topbar.html";
+include($path) ?>
 
 
 <div class="main">
