@@ -13,13 +13,13 @@ include($path) ?>
 
 
 <div class="main">
-    <h3>Wat is de pythagoras formule?</h3>
-    <p> a² + b² = c²</p>
+    <h3>Wat zijn machten?</h3>
+    <p> a tot de macht x is gelijk aan a vermenigvuldigen aan a, een x aantal keer.</p>
 
 
 
     <h3>Opdrachten</h3>
-    <a href="/wiskoende/Pages/Chapters/Pythagoras/pythagorasTest1.php">test</a>
+    <a href="/wiskoende/Pages/Chapters/Exponentiation/exponentiationTest1">test</a>
 </div>
 
 

@@ -24,6 +24,7 @@
         function newTest(){
             randomNumber1 = 0;
             randomNumber2 = 0;
+            let exponent
             while(randomNumber1 <= 0){
                 randomNumber1 = Math.floor(Math.random() * 10);
             }
@@ -37,9 +38,9 @@
 </head>
 <body>
 <?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/Includables/navbar.html";
-    include($path) ?>
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/Includables/navbar.html";
+include($path) ?>
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/Includables/topbar.html";
@@ -47,8 +48,8 @@ include($path) ?>
 
 <script>
 
-    let randomNumber1 = 0;
-    let randomNumber2 = 0;
+    let randomBaseNumber = 0;
+    let randomExponent = 0;
     window.onload = function() {
         newTest()
     }
